@@ -1,6 +1,6 @@
 # Individual Homework 05: Applied Security Audit on COMPAS
 
-This repository contains my submission for **Responsible Machine Learning — Individual Homework 05**. The project uses the **ProPublica COMPAS dataset** and extends the lecture live-coding material into an applied audit of **adversarial robustness, fairness degradation, poisoning risk, and membership inference leakage**.
+This repository contains my submission for **Responsible Machine Learning — Individual Homework 05**. The project uses the **ProPublica COMPAS dataset** and extends **adversarial robustness, fairness degradation, poisoning risk, and membership inference leakage**.
 
 The notebook is written as an **audit notebook** rather than a pure coding exercise: each section connects technical outputs to model-risk interpretation, governance implications, and deployment decisions.
 
@@ -15,7 +15,7 @@ The purpose of this assignment is to evaluate how machine learning systems can f
 
 ## Main Deliverable
 
-- Notebook: [L5_Jessie_Hsu_ASSN5.ipynb](/Users/hsuan/Documents/responsible_ML/Individual_ASSN5/L5_Jessie_Hsu_ASSN5.ipynb)
+- Notebook: [L5_Jessie_Hsu_ASSN5.ipynb]
 
 ## Analytical Scope
 
@@ -65,7 +65,7 @@ Main conclusion:
 - `LR` experiences a larger average AIR drop from its clean baseline.
 - `GBT` remains comparatively more stable under the same perturbation strengths.
 
-MSBA interpretation:
+Interpretation:
 
 - model selection in high-stakes settings should not be based only on clean predictive performance
 - robustness should be evaluated jointly with fairness sensitivity under adversarial stress
@@ -90,7 +90,7 @@ Evidence from the notebook:
 - stealth zone for `Caucasian` targeting: poison rate **0.02 to 0.08**
 - PSI remains effectively zero because feature distributions are unchanged by construction
 
-MSBA interpretation:
+Interpretation:
 
 - performance monitoring alone is insufficient for training-time integrity risk
 - feature-drift metrics such as PSI are structurally incapable of detecting label-only attacks
@@ -112,7 +112,7 @@ For LR regularization:
 - MI AUC changes only marginally
 - the expected privacy-utility tradeoff is present in form, but not strong in magnitude in this run
 
-MSBA interpretation:
+Interpretation:
 
 - the relationship between overfitting and privacy leakage is conceptually supported, but empirical strength depends on model behavior
 - leakage analysis should be interpreted quantitatively rather than assumed from theory alone
@@ -167,9 +167,8 @@ Rationale:
 
 ## Repository Contents
 
-- [L5_Jessie_Hsu_ASSN5.ipynb](/Users/hsuan/Documents/responsible_ML/Individual_ASSN5/L5_Jessie_Hsu_ASSN5.ipynb): final notebook submission
-- [Lecture-05-security.ipynb](/Users/hsuan/Documents/responsible_ML/Individual_ASSN5/Lecture-05-security.ipynb): lecture live-coding notebook used as methodological reference
-- [README.md](/Users/hsuan/Documents/responsible_ML/Individual_ASSN5/README.md): project overview and interpretation guide
+- [L5_Jessie_Hsu_ASSN5.ipynb]: final notebook submission
+- [README.md]: project overview and interpretation guide
 
 ## Reproducibility
 
@@ -183,9 +182,9 @@ Suggested Python packages:
 
 To reproduce the analysis:
 
-1. Open [L5_Jessie_Hsu_ASSN5.ipynb](/Users/hsuan/Documents/responsible_ML/Individual_ASSN5/L5_Jessie_Hsu_ASSN5.ipynb)
+1. Open [L5_Jessie_Hsu_ASSN5.ipynb]
 2. Run the notebook from top to bottom in a clean session
-3. Confirm that the dataset loads from the ProPublica GitHub source
+3. Confirm that the dataset loads from the GitHub source
 4. Review the tables, plots, and markdown conclusions in each part
 
 ## Limitations
